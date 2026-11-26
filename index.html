@@ -264,20 +264,22 @@
         لطفاً جهت ثبت اطلاعات، فرم زیر را تکمیل نمایید.
     </p>
 
-    <form class="contact-form">
+    <form class="contact-form" action="https://formsubmit.co/asadpoorab86@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="ثبت اطلاعات جدید از سایت شخصی">
+        <input type="hidden" name="_template" value="table">
 
         <div class="form-row">
 
             <div class="form-group">
                 <label for="firstname">نام:</label>
-                <input type="text" id="firstname"
+                <input type="text" id="firstname" name="firstname"
                        placeholder="نام خود را وارد کنید"
                        required>
             </div>
 
             <div class="form-group">
                 <label for="lastname">نام خانوادگی:</label>
-                <input type="text" id="lastname"
+                <input type="text" id="lastname" name="lastname"
                        placeholder="نام خانوادگی خود را وارد کنید"
                        required>
             </div>
@@ -288,7 +290,7 @@
 
             <div class="form-group">
                 <label for="nationalcode">کد ملی:</label>
-                <input type="text" id="nationalcode"
+                <input type="text" id="nationalcode" name="nationalcode"
                        placeholder="کد ملی ۱۰ رقمی"
                        maxlength="10"
                        inputmode="numeric"
@@ -297,7 +299,7 @@
 
             <div class="form-group">
                 <label for="studentid">شماره دانشجویی:</label>
-                <input type="text" id="studentid"
+                <input type="text" id="studentid" name="studentid"
                        placeholder="شماره دانشجویی"
                        required>
             </div>
@@ -308,13 +310,13 @@
 
             <div class="form-group">
                 <label for="email">ایمیل:</label>
-                <input type="email" id="email"
+                <input type="email" id="email" name="email"
                        placeholder="example@gmail.com">
             </div>
 
             <div class="form-group">
                 <label for="phone">شماره موبایل:</label>
-                <input type="tel" id="phone"
+                <input type="tel" id="phone" name="phone"
                        placeholder="09120000000">
             </div>
 
@@ -343,7 +345,7 @@
         <div class="form-group">
             <label for="field">رشته تحصیلی:</label>
 
-            <select id="field">
+            <select id="field" name="field">
                 <option value="">انتخاب رشته</option>
                 <option>مهندسی کامپیوتر</option>
                 <option>مهندسی برق</option>
@@ -365,7 +367,7 @@
         <!-- Buttons -->
         <div class="form-buttons">
 
-            <button type="button" class="submit-btn">
+            <button type="submit" class="submit-btn">
                 ثبت اطلاعات
             </button>
 
